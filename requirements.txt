@@ -1,0 +1,8 @@
+arrow
+tqdm
+numpy
+matplotlib
+pandas
+scikit-image
+# keras 1.10+ or
+https://github.com/wassname/keras/archive/patch-1.zip
