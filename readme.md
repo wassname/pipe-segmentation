@@ -1,11 +1,13 @@
 # Pipe segmentation using a convolutional auto-encoder
 
 Michael J. Clark
+
 *michael.clark at wassname.org*
 
 *Draft 26 September 2016*
 
 #### Abstract
+
 Deep convolutional neural networks have been successful in a variety of computer vision tasks,  from face detection to handwriting recognition. Convolutional auto-encoders have been particularly successful at object segmentation [[2]](#2)[[3]](#3) in medical imaging, even with small data sets. This paper presents a proof of concept for a new application: pipe detection from aerial drone images. Our model is a convolutional autoencoder with inception blocks, batch-normalisation, strided convolution for downsampling, and skip connections with residual blocks. Data augmentation is utilised to train the model despite the small amount of input data, achieving approximately 73% accuracy. The full implementation (based on keras) and the trained network is available at http://github.com/wassname/pipe-segmentation.
 
 ### Introduction
