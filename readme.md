@@ -20,7 +20,7 @@ This paper takes a convolutional auto-encoder with many of the latest advances a
 
 ### Data
 
-Our input data was a small amount of annotated images; however, with aggressive data augmentation, the 46 images proved sufficient to train to a reasonable accuracy. The drone images were supplied under an open license by the Water Corporation of Western Australia at GovHack Perth 2016 event. Each image was captured by drone at a resolution of 0.8 cm$^2$ per pixel and with height and width between approximately 8 m and 18.4 m.
+Our input data was a small amount of annotated images; however, with aggressive data augmentation, the 46 images proved sufficient to train to a reasonable accuracy. The drone images were supplied under an open license by the Water Corporation of Western Australia at GovHack Perth 2016 event. Each image was captured by drone at a resolution of 0.8 cm2 per pixel and with height and width between approximately 8 m and 18.4 m.
 
 For data augmentation, we used a range of flips, affine transforms, and jitter. The images were manually annotated and then split 1:2, saving 15 for test and 31 for training. These were augmented by a) random rotations up to 360 degrees, b) up to 80% horizontal and vertical translations, c) a zoom of 80%, d) shear of up to 10 degrees, and e) jitter of 5% for each colour channel [[8]](#8). In a final step, images were resized to 80 x 112 and cached.
 
