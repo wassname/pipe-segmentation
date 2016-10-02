@@ -24,7 +24,6 @@ For data augmentation, we used a range of flips, affine transforms, and jitter. 
 
 ### Model
 
-
 ![model_diagram](images/model_diagram.png)
 *The model architecture. Every box is an inception module or convolution with the number of feature layers denoted in brackets. The output size is listed below each box and the coloured arrows denote different operations.*
 
@@ -52,13 +51,13 @@ The final results gave an accuracy of 0.73 for the test data set and 0.745 for t
 
 The image below shows results and displays the weaknesses of this model. Firstly, it fails where foliage obscures large parts of the pipe, and secondly, it occasionally returns false positives for bleached wood or similar objects. This may be overcome with further training data or by using a region proposal network to evaluate pipe shaped regions.
 
-results|training|testing
--|-|-
-**accuracy**|0.745|0.73
-**dice loss**|0.079|0.100
-**mathews correlation coeffecient**|0.82|0.77
-*Results on unaugmented training and test data*
+|results|training|testing|
+|-|-|-|
+|**accuracy**|0.745|0.73|
+|**dice loss**|0.079|0.100|
+|**mathews correlation coeffecient**|0.82|0.77|
 
+*Results on unaugmented training and test data*
 
 ![results](images/results4.png)
 *Results for test data. Columns: (a) the input data, (b) the ground truth mask (c) the mask predicted by this model.*
